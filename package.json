@@ -1,7 +1,7 @@
 {
-  "name": "simple-otp",
-  "version": "0.1.0",
-  "description": "My TypeScript Library",
+  "name": "mfa-otp",
+  "version": "0.1.1",
+  "description": "Simple MFA OTP generator",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -9,6 +9,7 @@
     "dist"
   ],
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "tsup",
     "dev": "tsup --watch",
     "test": "vitest run",
@@ -37,10 +38,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thu-san/simple-otp"
+    "url": "https://github.com/thu-san/mfa-otp"
   },
   "bugs": {
-    "url": "https://github.com/thu-san/simple-otp/issues"
+    "url": "https://github.com/thu-san/mfa-otp/issues"
   },
-  "homepage": "https://github.com/thu-san/simple-otp#readme"
+  "homepage": "https://github.com/thu-san/mfa-otp#readme"
 }

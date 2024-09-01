@@ -18,7 +18,7 @@ export default defineConfig({
       },
     }),
     umdWrapper({
-      libraryName: 'simpleOTP',
+      libraryName: 'mfaOTP',
     }),
   ],
   format: ['cjs', 'esm', umdFormat],
