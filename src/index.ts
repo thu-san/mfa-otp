@@ -50,5 +50,11 @@ export const getOTP = ({
 
   let otp = (hex2dec(part2) & hex2dec('7fffffff')).toString().slice(-6);
 
-  return otp;
+  // get time remaining
+  const timeRemainingMS = 30 - (epoch % 30);
+
+  return {
+    otp,
+    timeRemainingMS,
+  };
 };
